@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <h4 onclick="nextPage(0)">man.</h4>
+      <div class="img-header"></div>
+    </header>
+    <ul class="page-layout">
+      <li class="home-page">
+        Hey, I'm Mattin Atai Najafi, 27 years old. I'm a junior front end
+        developer, with a focus on user experiences.
+      </li>
+      <li class="about-me">
+        I'm a web developer. I specialize in front-end-development which is
+        building out the visual components of a website. I build interactive,
+        responsive and beautiful websites though carefully crafted code and
+        user-centric design. I work with teechlogies like HTML5, CSS3 and
+        JavaScript.
+      </li>
+      <li class="projects">
+        <div>
+          This is some of the projects I have been involved in:
+          <span class="span-apple">
+            apple,
+            <div class="div-apple"></div>
+          </span>
+          <span class="span-google">
+            google,
+            <div class="div-google"></div>
+          </span>
+          <span class="span-adidas">
+            adidas,
+            <div class="div-adidas"></div>
+          </span>
+          <span class="span-reddit">
+            reddit,
+            <div class="div-reddit"></div>
+          </span>
+          and
+          <span class="span-twitter">
+            twitter.
+            <div class="div-twitter"></div>
+          </span>
+        </div>
+      </li>
+      <li class="interests">
+        <section>
+          <div class="chess">chess</div>
+          <div class="music">music</div>
+          <div class="food">food</div>
+          <div class="travel">travel</div>
+          <div class="sports">sports</div>
+        </section>
+      </li>
+    </ul>
+    <footer>
+      <ul class="footer">
+        <li onclick="nextPage(0)" id="home">Home</li>
+        <li onclick="nextPage(1)" id="about-me">About me</li>
+        <li onclick="nextPage(2)" id="work">Work</li>
+        <li onclick="nextPage(3)" id="interests">Interests</li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

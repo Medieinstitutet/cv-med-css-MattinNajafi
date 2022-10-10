@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+} 
+
+/** HEADER */
+
+header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+header h4 {
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s all;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+header h4:hover {
+    margin-left: 0rem;
+    font-size: 1.7rem;
+}
+
+header div {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    background: url('https://media-exp1.licdn.com/dms/image/C4D03AQGKGjfZVuzXdA/profile-displayphoto-shrink_800_800/0/1596632835316?e=2147483647&v=beta&t=0IC3kheeyxJ7Fp6KawzbYy93BWFfejXZ3lJtyy6IP6M');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+/** Layout */
+
+.page-layout {
+    display: inline-flex;
+    min-width: 100vw;
+    position: absolute;
+    transition: 2s left;
+    left: 0;
+}
+.page-layout > li {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0rem 4rem;
+    height: calc(100vh - 4.5rem);
+}
+
+.home-page {
+    background-color:  #1e4cc8;
+    color: white;
+    font-size: 3.3rem;
+
+}
+
+.about-me {
+    background-color: #ec4444;
+    color: white;
+    font-size: 3.3rem;
+}
+
+/* Projects  */
+
+.projects {
+    background-color: #51b151;
+    font-size: 3.3rem;
+    color: white;
+}
+
+/* Facebook */
+
+.projects div span {
+    position: relative;
+}
+
+.projects div span div {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    opacity: 0;
+    left:-2rem;
+    top: -5rem;
+    transition: all 0.3s;
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0px 0px 50px black;
+}
+.projects div {
+    position: relative;
+    z-index: 1;
+}
+.projects div span:hover div {
+    opacity: 1;
+    width: 340px;
+    height: 240px;
+}
+
+.div-twitter {
+    background: url('https://images.unsplash.com/photo-1566241477600-ac026ad43874?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2646&q=80');
+}
+.div-reddit {
+    background: url('https://external-preview.redd.it/pL73JJiZNInlJ3QSsQuBtInrS90q7NjkfaAO6aa9puU.png?auto=webp&s=8a21e54775589bced63990afd6aa5f31696dbe0c');
+}
+.div-google {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/96/Google_web_search.png');
+}
+.div-adidas {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/83957470557505.5ba7c8a9a5dcf.jpg');
+}
+.div-apple {
+    background: url('https://www.dbswebsite.com/wp-content/uploads/Apple-Product-Page-Web-Design-1024x576.gif');
+}
+
+
+.interests {
+    background-color: #b66bd9;
+    color: white;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.interests section {
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+/* Footer */
+
+footer ul {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    background-color:  transparent;
+    height: 4.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 3rem;
+    position: absolute;
+}
+
+footer ul li {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .3s opacity;
+}
+footer ul li:hover {
+    opacity: 0.6;
+}
+@media only screen and (max-width: 1100px) {
+    .about-me {
+        font-size: 2.5rem;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .about-me {
+        font-size: 2rem;
+    }
+
+    .home-page {
+        font-size: 3rem;
+    }
+  }
